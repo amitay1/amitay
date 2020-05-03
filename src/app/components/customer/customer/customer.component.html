@@ -1,0 +1,46 @@
+
+<div class="wrapper bg-light">
+ 
+    <nav id="sidebar" class="bg-secondary" >
+        <div class="sidebar-header  bg-secondary">
+            <a routerLink="customer"><h3>Personal Erea</h3></a>
+        </div>
+  
+        <ul class="list-unstyled components  bg-secondary">
+            <li class="active">
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle  bg-secondary">Actions</a>
+              <ul class="collapse list-unstyled  bg-secondary" id="pageSubmenu">
+                  <li>
+                      <a class="dropdown-item nav-link" routerLink="/customer/viewAllCoupons">Show All My Purchase</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item nav-link" routerLink="/customer/getAllCouponsByPrice">Get Coupon Less Then Max Price</a>
+                </li>
+               
+                <li>
+                    <a href="#s" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Coupons Store</a>
+                    <ul class="collapse list-unstyled" id="s">
+                        <li>
+                <li>
+                    <a class="dropdown-item nav-link" routerLink="/customer/CouponStoreElectronics">Electronics</a>
+                </li>
+                <li>
+                    <a class="dropdown-item nav-link" routerLink="/customer/CouponStoreFood">Food</a>
+                </li>
+                <li>
+                    <a class="dropdown-item nav-link" routerLink="/customer/CouponStoreSpa">Spa</a>
+                </li>
+                <li>
+                    <a class="dropdown-item nav-link" routerLink="/customer/CouponStoreSport">Sport</a>
+                </li>
+                <li>
+                    <a class="dropdown-item nav-link" routerLink="/customer/CouponStoreVacation">Vacation</a>
+                </li>
+          
+          
+            </ul>
+              </ul>
+        </ul>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>

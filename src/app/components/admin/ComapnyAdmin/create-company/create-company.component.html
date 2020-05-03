@@ -1,0 +1,44 @@
+<section class="container">
+    <body>
+    
+    <div class="container">
+      <h2>Add Company </h2>
+      <p>Pickel Rick!! </p>                                                                                                                                          
+      <form #Validation="ngForm" class="was-validated">
+        <div class="form-group">
+          <label for="title">Name:</label>
+          <input type="text" class="form-control" id="Name" [(ngModel)]="company.name" placeholder="Enter Name" name="title" required>            
+
+          
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="StartingD">Email:</label>
+            <input type="text" class="form-control" id="Email" [(ngModel)]="company.email" placeholder="Enter Email" name=" Email" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>     
+        <div class="form-group">
+          <label for="Message">Password:</label>
+          <input type="password" class="form-control" id="password" [(ngModel)]="company.password" placeholder="Enter Password" name="password" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        
+          
+        <button type="submit" class="btn btn-primary" (click)="createCompany()" data-toggle="modal" data-dismiss="modal"   data-target="#secssesCompanyCreate" [disabled]="!Validation.form.valid" >Create Company</button>
+      </form>
+    </div>
+    
+    </body>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  

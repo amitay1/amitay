@@ -1,0 +1,41 @@
+<section class="container">
+    <body>
+    
+    <div class="container">
+      <h2>Add Customer</h2>
+      <p>Pickel Rick!!! </p>
+      <form #Validation="ngForm"  class="was-validated">
+        <div class="form-group">
+            <label for="title">Name:</label>
+            <input type="text" class="form-control" id="Name" [(ngModel)]="customer.first_name" placeholder="Enter Name" name="first_name" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="Message">Last Name:</label>
+            <input type="text" class="form-control" id="LastName" [(ngModel)]="customer.last_name" placeholder="Enter Last Name" name="last_name" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>        
+        <div class="form-group">
+            <label for="Message">Email:</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="customer.email" placeholder="Enter Email" name="email" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>      
+        <div class="form-group">
+          <label for="Message">Password:</label>
+          <input type="password" class="form-control" id="password" [(ngModel)]="customer.password" placeholder="Enter Password" name="password" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+          
+        <button type="button" class="btn btn-primary" (click)="createCustomer()" data-dismiss="modal"   [disabled]="!Validation.form.valid">Submit</button>
+      </form>
+    </div>
+    
+    </body>
+  </section>
+
+
+  

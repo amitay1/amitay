@@ -1,0 +1,22 @@
+a{
+  font-family: 'Offside', cursive;
+}
+ul li{
+  display: inline-block;
+}
+
+
+a{
+  float: right;
+
+}
+button{
+  font-family: 'Offside', cursive;
+border: none;
+   color: white;
+   float: none;
+ 
+  
+ 
+  }
+ 
